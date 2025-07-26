@@ -19,7 +19,9 @@ public class baekjoon1264 {
         Scanner sc = new Scanner(System.in);
         ArrayList<String> list = new ArrayList<>();
 
-        while (sc.hasNextLine()) {
+        // equals 함수는 객체의 내용을 비교할 때 사용, 주소 X
+        // ==가 주소 사용
+        while (true) {
             String str = sc.nextLine();
             if (str.equals("#")) {
                 break;
